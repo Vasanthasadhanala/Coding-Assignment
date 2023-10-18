@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <div class="left">
+            <div class="top">
+               <input type="text" placeholder="0" id="display" readonly style="font-size: 20px;">
+               <button  class="AC opreator" onclick="clearDisplay()">AC</button>
+
+            </div>
+            <div class="bottom">
+                <div class="te" >
+                    <button  class="number" onclick="appendToDisplay('9')" >9</button>
+                    <input type="button" value="8" class="number" onclick="appendToDisplay('8')" >
+                    <input type="button" value="7" class="number" onclick="appendToDisplay('7')" >
+                    <input type="button" value="+" class="operator" onclick="appendToDisplay('+')" >
+
+                </div>
+                <div class="te">
+                    <input type="button" value="4"class="number" onclick="appendToDisplay('4')"  >
+                    <input type="button" value="5" class="number" onclick="appendToDisplay('5')" >
+                    <input type="button" value="6" class="number" onclick="appendToDisplay('6')" >
+                    <input type="button" value="-" class="operator" style="padding: 40px 41px;"onclick="appendToDisplay('-')" >
+                </div>
+                <div class="te">
+                    <input type="button" value="1"class="number" onclick="appendToDisplay('1')"  >
+                    <input type="button" value="2"class="number" onclick="appendToDisplay('2')" >
+                    <input type="button" value="3"class="number" onclick="appendToDisplay('3')" >
+                    <input type="button" value="÷" class="operator" style="padding: 40px 38.3px" onclick="appendToDisplay('/')" >
+
+
+                </div>
+                <div class="te">
+                    <input type="button" value="."class="number"  onclick="appendToDisplay('.')"  >
+                    <input type="button" value="0"class="number"  onclick="appendToDisplay('0')" >
+                    <input type="button" value="="class="number"  style="font-size: 28.5px;"  onclick="calculate('=')" >
+                    <input type="button" value="×" class="operator"  onclick="appendToDisplay('*')" >
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="tr">
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <script src="calculator.js"></script>
+
+</body>
+</html>
